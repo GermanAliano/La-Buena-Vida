@@ -1,0 +1,250 @@
+@font-face {
+  font-family: letra;
+  src: url("https://fonts.google.com/share?selection.family=Playfair+Display:ital,wght@0,400..900;1,400..900");
+}
+
+body {
+  background-image: url("fondo.jpg");
+}
+
+nav {
+  margin-top: 2.5em;
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  justify-content: space-between;
+}
+.menu {
+  color: aliceblue;
+  font-family: letra;
+  text-decoration: none;
+  padding: 0.5em;
+  border: 0.1em solid rgb(45, 245, 245);
+  border-radius: 8px;
+}
+
+.menu:hover {
+  border-color: rgb(45, 31, 241);
+}
+
+.parent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.child:hover {
+  background-color: white;
+  background-position: -100px 100px, -100px 100px;
+  transform: rotate3d(0.5, 1, 0, 30deg);
+  transform: perspective(180px) rotateX(60deg) translateY(2px);
+  box-shadow: 0px 10px 10px rgb(1, 49, 182);
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.button:hover {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate3d(0px, 0px, 15px) perspective(180px) rotateX(-35deg)
+    translateY(2px);
+  border-radius: 50%;
+}
+
+footer {
+  margin-top: 4em;
+}
+
+.Contactanos {
+  color: aliceblue;
+  font-size: 1.5em;
+  margin-top: -3em;
+  text-align: center;
+}
+
+.comentariosadicionales {
+  border-radius: 4px;
+  margin: 10px;
+
+  resize: none;
+}
+
+.formulariocontacto {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  border: 0.3em solid lightblue;
+  margin: auto;
+  margin-top: 1em;
+  padding: 2em;
+  background-color: rgb(203, 199, 216);
+  opacity: 75%;
+  border-radius: 1%;
+}
+
+input {
+  width: 18vw;
+}
+
+.fecha {
+  width: 8vw;
+}
+
+.pasajero {
+  width: 8vw;
+}
+
+label {
+  color: rgb(3, 37, 66);
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+.apellido {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+.telefono {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+.cantidad {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.fechaviaje {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+.comentarios {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+.lugar {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.5em;
+  margin-bottom: 1em;
+}
+
+.btn {
+  --color: #4409b2;
+  --color2: rgb(92, 198, 233);
+  padding: 0.8em 1.75em;
+  background-color: transparent;
+  border-radius: 6px;
+  border: 0.3px solid var(--color);
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  font-weight: 300;
+  font-size: 17px;
+  font-family: "Roboto", "Segoe UI", sans-serif;
+  text-transform: uppercase;
+  color: var(--color);
+}
+
+.btn::after,
+.btn::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform: skew(90deg) translate(-50%, -50%);
+  position: absolute;
+  inset: 50%;
+  left: 25%;
+  z-index: -1;
+  transition: 0.5s ease-out;
+  background-color: var(--color);
+}
+
+.btn::before {
+  top: -50%;
+  left: -25%;
+  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::before {
+  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::after {
+  transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btn:hover {
+  color: var(--color2);
+}
+
+.btn:active {
+  filter: brightness(0.7);
+  transform: scale(0.98);
+}
+
+.logo {
+  width: 20em;
+}
+.contenedorlogo {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -6em;
+}
+
+@media screen and (max-width: 768px) {
+  input {
+    width: 50vw;
+  }
+
+  .formulariocontacto {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .formulariocontacto {
+    width: 80vw;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1200px) {
+  input {
+    width: 35vw;
+  }
+
+  .formulariocontacto {
+    width: 80vw;
+    justify-content: center;
+  }
+}
