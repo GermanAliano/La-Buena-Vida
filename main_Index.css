@@ -1,0 +1,496 @@
+@font-face {
+  font-family: letra;
+  src: url("https://fonts.google.com/share?selection.family=Playfair+Display:ital,wght@0,400..900;1,400..900");
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+h2 {
+  color: green;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  align-items: center;
+}
+/* nav {
+  background-color: #025959;
+  margin: 5px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; centrado en vertical */
+
+.menu {
+  color: aliceblue;
+  font-family: letra;
+  text-decoration: none;
+  padding: 0.5em;
+  border: 0.1em solid rgb(45, 245, 245);
+  border-radius: 8px;
+}
+
+body {
+  background-color: #f2e0c9;
+  /*background-image: url("IMG/fondo\ .jpg");*/
+  /*background: #E9ECF4;
+	color: #000;
+	font-family: 'Roboto', sans-serif;*/
+}
+
+.contenedor {
+  width: 95%;
+  max-width: 1200px;
+  margin: 20px auto;
+  display: grid;
+  grid-gap: 20px;
+  /*grid-auto-columns: minmax(auto, 200px); /* Contenedor se expande hasta 200px */
+  /*grid-auto-rows: minmax(auto, 300px); /* Contenedor se expande hasta 300px */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, auto);
+
+  grid-template-areas:
+    "header header header header"
+    "contenido contenido contenido contenido"
+    "destino1 destino2 destino3 destino4"
+    "destino5 destino6 destino7 destino8"
+    "footer footer footer footer";
+}
+
+nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: first baseline;
+	gap: 6em;
+	height: 2em;
+	padding: 3em;
+	background-color: #025959;
+	margin-top: em;
+  }
+  .menu1 {
+	background-color: #025959;
+	color: #F2E0C9;
+	font-family: letra;
+	text-decoration: none;
+	padding: 0.7em;
+	border: 0.1em solid #04ADBF;
+	border-radius: 8px;
+  }
+  .menu1:hover {
+	border-color: #A0A603;
+  }
+  .logo {
+	width: 20em;
+  }
+  .contenedorlogo {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: -13.7em;
+  }
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .footer {
+  background: #fff;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+/* .contenedor .header { */
+  /*background: #12203E;
+	background-color: orangered;*/
+  /* background-color: #025959;
+  color: #fff;
+  grid-area: header;
+  position: fixed; Posición fija */
+  /* width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  box-sizing: border-box;
+} */
+
+/* .contenedor .header a {
+  font-size: 20px;
+  transition: all ease 300ms;
+} */
+
+/* .contenedor .header a {
+  font-size: 20px;
+  transition: all ease 300ms;
+} */
+
+/* .contenedor .header a:hover {
+  transform: scale(1.2);
+} */
+
+.contenedor .contenido {
+  grid-area: contenido;
+  margin-top: -5em; /* Margen superior para separar del contenedor fijo */
+  /*margin-top: auto;*/
+  /*grid-template-columns: repeat(auto-fit, minmax(20px, 1fr)); /* Ajusta las columnas */
+  /*display: flex; /* Activa el layout flexbox */
+  grid-gap: 20px; /* Distancia entre celdas*/
+  justify-content: space-between;
+}
+
+.texto {
+  max-width: 100%; /* Ancho máximo del texto */
+  text-align: center;
+  word-break: break-word;
+  white-space: nowrap;
+}
+
+.contenedor .destino1 {
+  background-image: url("IMG/1_cataratas_Oscar.jpg");
+  /*background: #fd558a;*/
+  color: white;
+  height: 250px;
+  text-align: center;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.contenedor .destino2 {
+  background-image: url("IMG/2_Salta_Oscar.jpg");
+  /*background: #55fd6e;*/
+  color: #fff;
+  height: 250px;
+  text-align: center;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+.contenedor .destino3 {
+  background-image: url("IMG/3_Jujuy_Oscar.jpg");
+  /*background: #000;*/
+  color: #fff;
+  height: 250px;
+  text-align: center;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+.contenedor .destino4 {
+  background-image: url("IMG/4_BsAs_Oscar.jpg");
+  /*background: #55a8fd;*/
+  color: #fff;
+  height: 250px;
+  text-align: center;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.contenedor .destino5 {
+  background-image: url("IMG/5_Mendoza_Oscar.jpg");
+  /*background: red;*/
+  color: #fff;
+  height: 250px;
+  text-align: center;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.contenedor .destino6 {
+  background-image: url("IMG/6_Bariloche_Oscar.jpg");
+  /*background: blueviolet;*/
+  color: #fff;
+  height: 250px;
+  text-align: center;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.contenedor .destino7 {
+  background-image: url("IMG/7_Calafate_Oscar.jpg");
+  /*background: green;*/
+  color: #fff;
+  height: 250px;
+  text-align: center;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+.contenedor .destino8 {
+  background-image: url("IMG/8_Usuhaia_Oscar.jpg");
+  /*background: greenyellow;*/
+  color: #fff;
+  height: 250px;
+  text-align: center;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.contenedor .destino1 {
+  grid-area: destino1;
+}
+.contenedor .destino2 {
+  grid-area: destino2;
+}
+.contenedor .destino3 {
+  grid-area: destino3;
+}
+.contenedor .destino4 {
+  grid-area: destino4;
+}
+.contenedor .destino5 {
+  grid-area: destino5;
+}
+.contenedor .destino6 {
+  grid-area: destino6;
+}
+.contenedor .destino7 {
+  grid-area: destino7;
+}
+.contenedor .destino8 {
+  grid-area: destino8;
+}
+
+.contenedor .footer {
+  margin: 7px;
+  height: 4em;
+  background-color: #025959;
+  /*background: #12203E;
+	background-color: orangered;*/
+  color: #fff;
+  grid-area: footer;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(20px, 1fr)
+  ); /* Ajusta las columnas */
+}
+
+.contenedor .footer .iconos_footer {
+  display: flex; /* Activa el layout flexbox */
+  justify-content: center;
+  /*justify-content: space-between; /* Distribuye los divs uniformemente */
+}
+
+.contenedor .contenido {
+  display: flex; /* Activa el layout flexbox*/
+  /*display: inline-grid;*/
+  justify-content: left;
+  /*justify-content: space-between; /* Distribuye los divs uniformemente */
+}
+
+/* 2 columnas de igual tamaño  992*/
+/* @media (min-width: 400px) and (max-width: 850px)  */
+@media screen and (max-width: 992px) {
+  .contenedor .header a {
+    font-size: 14px;
+  }
+  .contenedor .contenido {
+    display: flex;
+  }
+  .contenedor {
+    /*grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(7, auto);*/
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-template-areas:
+      "header header"
+      "contenido contenido"
+      "destino1 destino2"
+      "destino3 destino4"
+      "destino5 destino6"
+      "destino7 destino8"
+      "footer footer";
+  }
+}
+
+/* En pantallas más anchas, se expande hasta 400px */
+/*@media (max-width: 768px) 
+{
+	.contenedor 
+	{
+	  grid-auto-columns: minmax(auto, 400px); 
+	}
+  }
+*/
+/* En pantallas más altas, se expande hasta 500px */
+/*@media (min-height: 600px) 
+{
+	.contenedor
+	{
+	  grid-auto-rows: minmax(auto, 500px); 
+	}
+  }
+*/
+
+@media screen and (max-width: 768px) {
+  .contenedor .header a {
+    font-size: 10px;
+  }
+  .contenedor .contenido {
+    display: grid;
+  }
+  .contenedor {
+    grid-template-columns: repeat(1, 1fr);
+
+    grid-template-areas:
+      "header"
+      "contenido"
+      "destino1"
+      "destino2"
+      "destino3"
+      "destino4"
+      "destino5"
+      "destino6"
+      "destino7"
+      "destino8"
+      "footer";
+  }
+}
+
+/* CÓDIGO GERMÁN FOOTER  ANIMACIÓN LOGOS*/
+
+.child {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.child:hover {
+  background-color: white;
+  background-position: -100px 100px, -100px 100px;
+  transform: rotate3d(0.5, 1, 0, 30deg);
+  transform: perspective(180px) rotateX(60deg) translateY(2px);
+  box-shadow: 0px 10px 10px rgb(1, 49, 182);
+}
+
+.btn {
+  --color: #4409b2;
+  --color2: rgb(92, 198, 233);
+  padding: 0.8em 1.75em;
+  background-color: transparent;
+  border-radius: 6px;
+  border: 0.3px solid var(--color);
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  font-weight: 300;
+  font-size: 17px;
+  font-family: "Roboto", "Segoe UI", sans-serif;
+  text-transform: uppercase;
+  color: var(--color);
+}
+
+.btn::after,
+.btn::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform: skew(90deg) translate(-50%, -50%);
+  position: absolute;
+  inset: 50%;
+  left: 25%;
+  z-index: -1;
+  transition: 0.5s ease-out;
+  background-color: var(--color);
+}
+
+.btn::before {
+  top: -50%;
+  left: -25%;
+  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::before {
+  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::after {
+  transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btn:hover {
+  color: var(--color2);
+}
+
+.btn:active {
+  filter: brightness(0.7);
+  transform: scale(0.98);
+}
+/* CARRUSEL FOTOS - CÓDIGO KAREN */
+.slider-frame {
+  width: auto;
+  height: auto;
+  /*width: 500px;
+	height: auto;*/
+  margin-left: 10px;
+  overflow: hidden;
+  align-items: end;
+}
+
+.slider-frame ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: slide 15s infinite alternate ease-in-out;
+}
+.slider-frame ol {
+  margin-left: 15px;
+  margin-top: 15px;
+  color: white;
+}
+.slider-frame li {
+  width: 100%;
+  list-style: none;
+  color: white;
+}
+
+.slider-frame img {
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+.iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}

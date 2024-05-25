@@ -4,27 +4,30 @@
 }
 
 body {
-  background-image: url("fondo.jpg");
+  background-color: #F2E0C9;
 }
 
 nav {
-  margin-top: 2.5em;
   display: flex;
   flex-wrap: wrap;
-  width: 40%;
-  justify-content: space-between;
+  justify-content: first baseline;
+  gap: 6em;
+  height: 2em;
+  padding: 3em;
+  background-color: #025959;
 }
 .menu {
-  color: aliceblue;
+  background-color: #025959;
+  color: #F2E0C9;
   font-family: letra;
   text-decoration: none;
-  padding: 0.5em;
-  border: 0.1em solid rgb(45, 245, 245);
+  padding: 0.7em;
+  border: 0.1em solid #04ADBF;
   border-radius: 8px;
 }
 
 .menu:hover {
-  border-color: rgb(45, 31, 241);
+  border-color: #A0A603;
 }
 
 .parent {
@@ -73,11 +76,16 @@ button {
 }
 
 footer {
-  margin-top: 4em;
+  margin-top: 1em;
+  padding: 1em;
+  background-color: #025959;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
 }
 
 .Contactanos {
-  color: aliceblue;
+  color: black;
   font-size: 1.5em;
   margin-top: -3em;
   text-align: center;
@@ -86,7 +94,6 @@ footer {
 .comentariosadicionales {
   border-radius: 4px;
   margin: 10px;
-
   resize: none;
 }
 
@@ -94,7 +101,7 @@ footer {
   display: flex;
   flex-direction: column;
   width: 30vw;
-  border: 0.3em solid lightblue;
+  border: 0.3em solid #025959;
   margin: auto;
   margin-top: 1em;
   padding: 2em;
@@ -156,62 +163,6 @@ label {
   margin-bottom: 1em;
 }
 
-.btn {
-  --color: #4409b2;
-  --color2: rgb(92, 198, 233);
-  padding: 0.8em 1.75em;
-  background-color: transparent;
-  border-radius: 6px;
-  border: 0.3px solid var(--color);
-  transition: 0.5s;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  z-index: 1;
-  font-weight: 300;
-  font-size: 17px;
-  font-family: "Roboto", "Segoe UI", sans-serif;
-  text-transform: uppercase;
-  color: var(--color);
-}
-
-.btn::after,
-.btn::before {
-  content: "";
-  display: block;
-  height: 100%;
-  width: 100%;
-  transform: skew(90deg) translate(-50%, -50%);
-  position: absolute;
-  inset: 50%;
-  left: 25%;
-  z-index: -1;
-  transition: 0.5s ease-out;
-  background-color: var(--color);
-}
-
-.btn::before {
-  top: -50%;
-  left: -25%;
-  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
-}
-
-.btn:hover::before {
-  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
-}
-
-.btn:hover::after {
-  transform: skew(45deg) translate(-50%, -50%);
-}
-
-.btn:hover {
-  color: var(--color2);
-}
-
-.btn:active {
-  filter: brightness(0.7);
-  transform: scale(0.98);
-}
 
 .logo {
   width: 20em;
@@ -219,7 +170,7 @@ label {
 .contenedorlogo {
   display: flex;
   justify-content: flex-end;
-  margin-top: -6em;
+  margin-top: -13.7em;
 }
 
 @media screen and (max-width: 768px) {
@@ -247,4 +198,8 @@ label {
     width: 80vw;
     justify-content: center;
   }
+}
+
+.botoncito{
+margin-left: 7em;
 }

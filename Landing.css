@@ -4,44 +4,49 @@
 }
 
 body {
-  background-image: url("fondo.jpg");
+  background-color: #F2E0C9;
   overflow: hidden;
 }
 nav {
-  margin-top: 1.5em;
+  background-color: #025959;
   display: flex;
   flex-wrap: wrap;
-  width: 40%;
-  justify-content: space-between;
+  justify-content: first baseline;
+  gap: 6em;
+  height: 2em;
+  padding: 3em;
+  margin-top: 0.5em;
   /* position: fixed; */
 }
 
 .menu {
-  color: aliceblue;
+  background-color: #025959;
+  color: #F2E0C9;
   font-family: letra;
   text-decoration: none;
-  padding: 0.5em;
-  border: 0.1em solid rgb(45, 245, 245);
+  padding: 0.7em;
+  border: 0.1em solid #04ADBF;
   border-radius: 8px;
 }
 
 .menu:hover {
-  border-color: rgb(45, 31, 241);
+  border-color: #A0A603;
 }
 
 .logo {
   width: 50em;
   margin-left: -3em;
-  margin-top: -3em;
+  margin-top: 5em;
+  margin-bottom: 9.5em;
 }
 
 .divhome {
   font-family: letra;
-  color: aliceblue;
+  color: black;
   display: flex;
   flex-direction: column;
   width: 40%;
-  margin-top: -35em;
+  margin-top: -37em;
   margin-left: 48em;
   text-align: center;
 }
@@ -99,8 +104,9 @@ button {
 }
 
 footer {
-  margin-top: 4em;
-
+  margin-top: 3em;
+  padding: 1em;
+  background-color: #025959;
 }
 
 

@@ -1,0 +1,406 @@
+/* @font-face {
+    font-family:letra;
+    src: url('https://fonts.google.com/share?selection.family=Playfair+Display:ital,wght@0,400..900;1,400..900'); */
+
+/* @media all and (max-width: 600px) {}
+@media all and (min-width: 600px){} */
+@media screen and (max-width: 768px){}
+@media screen and (min-width: 992px){}
+@media screen and (min-width: 1200px){}
+
+:root{
+font-size: 16px;
+}
+/* body{
+    background-image: url("Diego Fondo.jpeg");
+} */
+
+body{
+    background-color: #f2e0c9;
+}
+h1{
+    color: rgb(122, 90, 9);
+}
+h2{
+    color:greenyellow;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 20px;
+}
+h3{
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* .navegador{
+    background-color: #025959;
+    margin: 5px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+} */
+#navbar{
+    background-color: #025959;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: first baseline;
+    gap: 6em;
+    height: 2em;
+    padding: 3em;
+    margin-top: 0.5em;
+}
+.menu {
+    background-color: #025959;
+    color: #F2E0C9;
+    font-family: letra;
+    text-decoration: none;
+    padding: 0.7em;
+    border: 0.1em solid #04ADBF;
+    border-radius: 8px;
+  }
+  
+  .menu:hover {
+    border-color: #A0A603;
+  }
+
+.opcion{
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    padding: 0.5em;
+    border: 0.1em solid #025959;
+    border-radius: 8px;
+}
+.opcion:hover {
+    border-color: rgb(17, 176, 176);
+    box-shadow: 0px 10px 10px rgb(227, 214, 130);
+}
+/* ESTILOS DE CAJA 01 Y SUS COMPONENTES */
+.caja_01{
+    border-bottom: ridge;
+    border-color:#025959;
+    border-top: ridge;
+    border-color:#025959;
+    display: flex;
+    justify-content: space-between;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 2vw;
+    padding-left: 2vw;
+
+    margin-right: 0.5vw;
+    margin-left: 0.5vw;
+    margin-top: -5em;
+}
+.destino{
+    color: black;
+    font-size: 1.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+}
+.grid-container {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns:auto auto;
+}
+.grid-item1 {
+    color: white;
+    align-content: center;
+    margin-right: 0.5vw;
+    margin-left: 0.5vw;
+}
+.grid-item2 {
+    /* border-style: dashed;
+    border-color: aqua; */
+    color:black;
+    align-content: center;
+    width: 66vw;
+    margin-right: 0.5vw;
+    margin-left: 0.5vw;
+}
+.bienvenidos{
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+/* ESTILOS DE CAJA 02 Y SUS COMPONENTES */
+.caja_02{
+    border-style: ridge;
+    border-color: #025959;
+
+    padding-bottom: 20px;
+    padding-right: 2vw;
+    padding-left: 2vw;
+
+    margin-right: 0.5vw;
+    margin-left: 0.5vw;
+
+}
+.descripcion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.carrusel{
+    width: 72vw;
+    height: 14em;
+    border-color:  white;
+    overflow: hidden;
+    padding-top: 0.5em;
+    padding-bottom:  0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+.grande1{
+    width: 216vw;
+    height: 8em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contenido1{
+    width: 100%;
+    height: 8em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    color: black;
+}
+
+.grande2{
+    width: 216vw;
+    height: 8em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contenido2{
+    width: 100%;
+    height: 8em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    color: white;
+}
+
+.grande3{
+    width: 216vw;
+    height: 8em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contenido3{
+    width: 100%;
+    height: 8em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    color: white;
+}
+
+.grande4{
+    width: 216vw;
+    height: 8em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contenido4{
+    width: 100%;
+    height: 8em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    color: white;
+}
+
+.grande5{
+    width: 216vw;
+    height: 8em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contenido5{
+    width: 100%;
+    height: 8em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    color: white;
+}
+
+.grande6{
+    width: 216vw;
+    height: 8em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contenido6{
+    width: 100%;
+    height: 8em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    color: white;
+}
+
+.grande7{
+    width: 216vw;
+    height: 8em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contenido7{
+    width: 100%;
+    height: 8em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    color: white;
+}
+.caja_botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.numeros:hover{
+    transform: scale(1.4);
+}
+
+.mail:hover:hover{
+    transform: scale(1.4);
+}
+
+#titulo{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(122, 90, 9);
+    font-size: 1.2em
+}
+#parrafo{
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+}
+#argentina{
+    margin-left: 20px;
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;   
+}
+.flecha{
+    padding-left: 20px;
+}
+.flecha:hover{
+    transform: scale(1.1);
+}
+
+.Contactanos{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;  
+}
+/* CAJA DE MUESTRA */
+#caja_03{
+    color: white;
+    border-style: ridge;
+    border-color:  white;
+    
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    padding-right: 2vw;
+    padding-left: 2vw;
+
+    margin-top: .25vh;
+    margin-bottom: 0.25vh;
+    margin-right: 0.5vw;
+    margin-left: 0.5vw;
+}
+.video{
+    margin-left: 0.5vw;
+}
+/* REDES SOCIALES */
+.contenedor{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.contenedor a {
+    font-size: 30px;
+    transition: all ease 300ms;
+}
+.contenedor a:hover {
+    transform: scale(1.2);
+}
+.facebook{
+    color: cyan
+}
+.whatsapp{
+    color: rgb(78, 233, 78);
+}
+.twitter{
+    color:dodgerblue
+}
+.youtube{
+    color: red;
+}
+.instagram{
+    color: lightsalmon;
+}
+/* ESTILOS GERMAN */
+/* 
+.parent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+    border-radius: 50%;
+    margin: 0 5px;
+} 
+.child:hover {
+    background-color:rgb(35, 212, 153);
+    /* white */
+    /* background-position: -100px 100px, -100px 100px;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+    transform: perspective(180px) rotateX(60deg) translateY(2px);
+    box-shadow: 0px 10px 10px rgb(227, 214, 130);
+} 
+button {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+} 
+.button:hover {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate3d(0px, 0px, 15px) perspective(180px) rotateX(-35deg)
+    translateY(2px);
+    border-radius: 50%;
+} 
+footer {
+    margin: 7px;
+    height: 4em;
+    background-color: #025959;
+} */ 
+
+.logo {
+    width: 20em;
+  }
+  .contenedorlogo {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -13.7em;
+  }
