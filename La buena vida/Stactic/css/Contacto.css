@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #F2E0C9;
+  background-color: #f2e0c9;
 }
 
 nav {
@@ -12,22 +12,21 @@ nav {
   flex-wrap: wrap;
   justify-content: first baseline;
   gap: 6em;
-  height: 2em;
-  padding: 3em;
+  padding: 3em; /* Elimina la altura fija y deja que el contenido determine la altura */
   background-color: #025959;
 }
 .menu {
   background-color: #025959;
-  color: #F2E0C9;
+  color: #f2e0c9;
   font-family: letra;
   text-decoration: none;
   padding: 0.7em;
-  border: 0.1em solid #04ADBF;
+  border: 0.1em solid #04adbf;
   border-radius: 8px;
 }
 
 .menu:hover {
-  border-color: #A0A603;
+  border-color: #a0a603;
 }
 
 .parent {
@@ -162,7 +161,9 @@ label {
   gap: 0.5em;
   margin-bottom: 1em;
 }
-
+.Contactanos {
+  margin-top: -3em;
+}
 
 .logo {
   width: 20em;
@@ -181,12 +182,58 @@ label {
   .formulariocontacto {
     width: 80vw;
   }
+  nav {
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos al inicio */
+    padding: 0.2em; /* Reduce el relleno */
+    width: 100%;
+    gap: 1em;
+  }
+  .menu {
+    background-color: #025959;
+    color: #f2e0c9;
+    font-family: letra;
+    text-decoration: none;
+    padding: 0.7em;
+    border: 0.1em solid #04adbf;
+    border-radius: 8px;
+  }
+
+  .menu:hover {
+    border-color: #a0a603;
+  }
+  .logo {
+    display: none;
+  }
+  
 }
 
 @media screen and (max-width: 992px) {
   .formulariocontacto {
     width: 80vw;
     justify-content: center;
+  }
+  nav {
+    align-items: flex-start; /* Alinea los elementos al inicio */
+    padding: 3em; /* Reduce el relleno */
+    width: 100%;
+    gap: 1em;
+  }
+  .menu {
+    background-color: #025959;
+    color: #f2e0c9;
+    font-family: letra;
+    text-decoration: none;
+    padding: 0.7em;
+    border: 0.1em solid #04adbf;
+    border-radius: 8px;
+  }
+
+  .menu:hover {
+    border-color: #a0a603;
+  }
+  .logo {
+    display: none;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -198,8 +245,18 @@ label {
     width: 80vw;
     justify-content: center;
   }
+
+  .logo{
+    display: none;
+  }
+
+  .Contactanos {
+    
+    margin-top: 10em;
+    
+  }
 }
 
-.botoncito{
-margin-left: 7em;
+.botoncito {
+  margin-left: 7em;
 }

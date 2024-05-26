@@ -8,15 +8,12 @@ body {
   overflow: hidden;
 }
 nav {
-  background-color: #025959;
   display: flex;
   flex-wrap: wrap;
   justify-content: first baseline;
   gap: 6em;
-  height: 2em;
-  padding: 3em;
-  margin-top: 0.5em;
-  /* position: fixed; */
+  padding: 3em; /* Elimina la altura fija y deja que el contenido determine la altura */
+  background-color: #025959;
 }
 
 .menu {
@@ -112,29 +109,29 @@ footer {
 
 
 @media screen and (max-width: 768px) {
-  
-  
-  .contenedor{
-    margin-top: 1.5em;
-  display: flex;
-flex-direction: column;
-  width: 40%;
-  justify-content: space-between;
-  margin-right: 1em;
- 
-  }
-    .texto{
-      display: grid;
-      grid-auto-columns: min-content;
-      align-items: center;
-      margin-left: -35em;
-      margin-top: 25em;
+     
+    body{
+      overflow: scroll;
     }
-    footer{
-          margin-left: 25em;
+    nav {
+      flex-direction: column;
+      align-items: flex-start; /* Alinea los elementos al inicio */
+      padding: 1em; /* Reduce el relleno */
+      width: 100%;
+      gap: 1em;
     }
-    
-  
+    .menu {
+      background-color: #025959;
+      color: #f2e0c9;
+      font-family: letra;
+      text-decoration: none;
+      padding: 0.7em;
+      border: 0.1em solid #04adbf;
+      border-radius: 8px;
+    }
+    .menu:hover {
+      border-color: #a0a603;
+    }
   
 }
 
