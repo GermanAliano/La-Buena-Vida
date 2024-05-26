@@ -144,7 +144,7 @@ nav {
 }
 
 .contenedor .destino1 {
-  background-image: url("IMG/1_cataratas_Oscar.jpg");
+  background-image: url("../Assets/IMG/1_cataratas_Oscar.jpg");
   /*background: #fd558a;*/
   color: white;
   height: 250px;
@@ -155,7 +155,7 @@ nav {
 }
 
 .contenedor .destino2 {
-  background-image: url("IMG/2_Salta_Oscar.jpg");
+  background-image: url("../Assets/IMG/2_Salta_Oscar.jpg");
   /*background: #55fd6e;*/
   color: #fff;
   height: 250px;
@@ -165,7 +165,7 @@ nav {
   justify-content: center;
 }
 .contenedor .destino3 {
-  background-image: url("IMG/3_Jujuy_Oscar.jpg");
+  background-image: url("../Assets/IMG/3_Jujuy_Oscar.jpg");
   /*background: #000;*/
   color: #fff;
   height: 250px;
@@ -175,7 +175,7 @@ nav {
   justify-content: center;
 }
 .contenedor .destino4 {
-  background-image: url("IMG/4_BsAs_Oscar.jpg");
+  background-image: url("../Assets/IMG/4_BsAs_Oscar.jpg");
   /*background: #55a8fd;*/
   color: #fff;
   height: 250px;
@@ -186,7 +186,7 @@ nav {
 }
 
 .contenedor .destino5 {
-  background-image: url("IMG/5_Mendoza_Oscar.jpg");
+  background-image: url("../Assets/IMG/5_Mendoza_Oscar.jpg");
   /*background: red;*/
   color: #fff;
   height: 250px;
@@ -197,7 +197,7 @@ nav {
 }
 
 .contenedor .destino6 {
-  background-image: url("IMG/6_Bariloche_Oscar.jpg");
+  background-image: url("../Assets/IMG/6_Bariloche_Oscar.jpg");
   /*background: blueviolet;*/
   color: #fff;
   height: 250px;
@@ -208,7 +208,7 @@ nav {
 }
 
 .contenedor .destino7 {
-  background-image: url("IMG/7_Calafate_Oscar.jpg");
+  background-image: url("../Assets/IMG/7_Calafate_Oscar.jpg");
   /*background: green;*/
   color: #fff;
   height: 250px;
@@ -218,7 +218,7 @@ nav {
   justify-content: center;
 }
 .contenedor .destino8 {
-  background-image: url("IMG/8_Usuhaia_Oscar.jpg");
+  background-image: url("../Assets/IMG/8_Usuhaia_Oscar.jpg");
   /*background: greenyellow;*/
   color: #fff;
   height: 250px;
