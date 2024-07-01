@@ -1,0 +1,263 @@
+@font-face {
+    font-family: letra;
+    src: url("https://fonts.google.com/share?selection.family=Playfair+Display:ital,wght@0,400..900;1,400..900");
+  }
+  
+  body {
+    background-color: #f2e0c9;
+  }
+  
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: first baseline;
+    gap: 6em;
+    padding: 3em; /* Elimina la altura fija y deja que el contenido determine la altura */
+    background-color: #025959;
+  }
+  .menu {
+    background-color: #025959;
+    color: #f2e0c9;
+    font-family: letra;
+    text-decoration: none;
+    padding: 0.7em;
+    border: 0.1em solid #04adbf;
+    border-radius: 8px;
+  }
+  
+  .menu:hover {
+    border-color: #a0a603;
+  }
+  
+  .parent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .child {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+    border-radius: 50%;
+    margin: 0 5px;
+  }
+  
+  .child:hover {
+    background-color: white;
+    background-position: -100px 100px, -100px 100px;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+    transform: perspective(180px) rotateX(60deg) translateY(2px);
+    box-shadow: 0px 10px 10px rgb(1, 49, 182);
+  }
+  
+  button {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+  }
+  
+  .button:hover {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate3d(0px, 0px, 15px) perspective(180px) rotateX(-35deg)
+      translateY(2px);
+    border-radius: 50%;
+  }
+  
+  footer {
+    margin-top: 1em;
+    padding: 1em;
+    background-color: #025959;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+  }
+  
+  .Contanos {
+    color: black;
+    font-size: 1.5em;
+    margin-top: -3em;
+    text-align: center;
+  }
+  
+  .comentariosadicionales {
+    border-radius: 4px;
+    margin: 10px;
+    resize: none;
+  }
+  
+  .formulariocontacto {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    border: 0.3em solid #025959;
+    margin: auto;
+    margin-top: 1em;
+    padding: 2em;
+    background-color: rgb(203, 199, 216);
+    opacity: 75%;
+    border-radius: 1%;
+  }
+  
+  input {
+    width: 18vw;
+  }
+  
+  .fecha {
+    width: 8vw;
+  }
+  
+  .pasajero {
+    width: 8vw;
+  }
+  
+  label {
+    color: rgb(3, 37, 66);
+  }
+  .name {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+  .apellido {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+  .telefono {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+  .cantidad {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+  
+  .fechaviaje {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+  .comentarios {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+  .lugar {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.5em;
+    margin-bottom: 1em;
+  }
+  .Contactanos {
+    margin-top: -3em;
+  }
+  
+  .logo {
+    width: 20em;
+  }
+  .contenedorlogo {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -13.7em;
+  }
+  
+  @media screen and (max-width: 768px) {
+    input {
+      width: 50vw;
+    }
+  
+    .formulariocontacto {
+      width: 80vw;
+    }
+    nav {
+      flex-direction: column;
+      align-items: flex-start; /* Alinea los elementos al inicio */
+      padding: 0.2em; /* Reduce el relleno */
+      width: 100%;
+      gap: 1em;
+    }
+    .menu {
+      background-color: #025959;
+      color: #f2e0c9;
+      font-family: letra;
+      text-decoration: none;
+      padding: 0.7em;
+      border: 0.1em solid #04adbf;
+      border-radius: 8px;
+    }
+  
+    .menu:hover {
+      border-color: #a0a603;
+    }
+    .logo {
+      display: none;
+    }
+    
+  }
+  
+  @media screen and (max-width: 992px) {
+    .formulariocontacto {
+      width: 80vw;
+      justify-content: center;
+    }
+    nav {
+      align-items: flex-start; /* Alinea los elementos al inicio */
+      padding: 3em; /* Reduce el relleno */
+      width: 100%;
+      gap: 1em;
+    }
+    .menu {
+      background-color: #025959;
+      color: #f2e0c9;
+      font-family: letra;
+      text-decoration: none;
+      padding: 0.7em;
+      border: 0.1em solid #04adbf;
+      border-radius: 8px;
+    }
+  
+    .menu:hover {
+      border-color: #a0a603;
+    }
+    .logo {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    input {
+      width: 35vw;
+    }
+  
+    .formulariocontacto {
+      width: 80vw;
+      justify-content: center;
+    }
+  
+    .logo{
+      display: none;
+    }
+  
+    .Contactanos {
+      
+      margin-top: 10em;
+      
+    }
+  }
+  
+  .botoncito {
+    margin-left: 7em;
+  }
+  

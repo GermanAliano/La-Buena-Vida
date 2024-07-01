@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../Stactic/css/Contacto.css" />
-    <title>La Buena Vida</title>
+    <link rel="stylesheet" href="../Stactic/css/Tu Opinion.css">
+    <title>Document</title>
   </head>
   <body>
     <header>
@@ -18,18 +18,18 @@
       </nav>
     </header>
     <div class="contenedorlogo">
-      <a href="../Index.html"><img class="logo" src="../Stactic/Assets/logo.png" alt="logo" /></a>
+      <a href="../Index.html"
+        ><img class="logo" src="../Stactic/Assets/logo.png" alt="logo"
+      /></a>
     </div>
 
-    <h1 class="Contactanos">Contactanos</h1>
-
+    <h1 class="Contanos">Contanos tu experiencia</h1>
     <form
       name="formulario"
       class="formulariocontacto"
-      action="https://formspree.io/f/mqkrozpr"
-      method="POST"
+      
     >
-      <h3>Formulario de Contacto</h3>
+      
       <div class="name">
         <label for="Nombre">Nombre</label>
         <input
@@ -65,7 +65,7 @@
         placeholder="Ingrese su correo electronico"
         name="email"
       />
-      <h3>Destino</h3>
+      <h3>Paquete elegido</h3>
       <div class="lugar">
         <label for="">Buenos Aires</label>
         <input type="checkbox" value="Buenos Aires" />
@@ -82,53 +82,14 @@
         <label for="">Ushuaia</label>
         <input type="checkbox" value="Ushuaia" />
       </div>
-      <div class="cantidad">
-        <label for="Pasajero">Pasajero</label>
-        <select class="pasajero" name="Pasajeros" id="Pasajeros">
-          <option value="0">Seleccione una opcion</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-          <option value="11 o mas">11 o mas</option>
-        </select>
-      </div>
 
-      <div class="fechaviaje">
-        <label for="Fecha de inicio">Fecha de inicio</label>
-        <input
-          required
-          class="fecha"
-          type="date"
-          id="Comienzo"
-          name="Fecha de inicio"
-          value="01/01/2024"
-        />
-      </div>
-      <div class="fechaviaje">
-        <label for="Fecha de Finalizacion">Fecha de Finalizacion</label>
-        <input
-          required
-          class="fecha"
-          type="date"
-          id="finalizacion"
-          name="Fecha de finalizacion"
-          value="01/01/2024"
-        />
-      </div>
       <div class="comentarios">
-        <label for="">Comentarios adicionales</label>
+        <label for="">Contanos tu experiencia</label>
         <textarea
           required
-          class="comentariosadicionales"
-          name="Comentarios adicionales"
-          id="Comentarios adicionales"
+          class="experiencia"
+          name="experiencia"
+          id="experiencia"
           rows="15"
           cols="60"
         ></textarea>
@@ -145,27 +106,4 @@
     <script src="../Stactic/JS/validacion.js"></script>
   </body>
   <iframe src="Footer.html" frameborder="0" width="100%" height="100"></iframe>
-  <div class="comentarios">
-    <label for="">Comentarios adicionales</label>
-    <textarea
-      required
-      class="comentariosadicionales"
-      name="Comentarios adicionales"
-      id="Comentarios adicionales"
-      rows="15"
-      cols="60"
-    ></textarea>
-  </div>
-  <p id="error"></p>
-  <input
-    class="menu botoncito"
-    type="button"
-    id="bl"
-    value="Enviar"
-    onclick="validacion()"
-  />
-</form>
-<script src="../Stactic/JS/validacion.js"></script>
-</body>
-<iframe src="Footer.html" frameborder="0" width="100%" height="100"></iframe>
 </html>
