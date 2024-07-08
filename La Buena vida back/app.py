@@ -80,8 +80,8 @@ class Comentarios:
 #--------------------------------------------------------------------
 
 # Crear una instancia de la clase Comentarios
-comentar=Comentarios(host='localhost', port='3306', user='alianogerman', password='dante2015')
-# comentar=Comentarios(host='', user='', password='')
+comentar=Comentarios(host='', port='', user='', password='')
+
 @app.route('/')
 def home():
     return 'Bienvenido a la API de Comentarios'
