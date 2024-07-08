@@ -11,7 +11,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: first baseline;
-  gap: 6em;
+  gap: 5em;
   padding: 3em; /* Elimina la altura fija y deja que el contenido determine la altura */
   background-color: #025959;
 }

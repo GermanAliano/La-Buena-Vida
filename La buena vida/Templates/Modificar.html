@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Stactic/css/Tu Opinion.css" />
+    <title>Modificar Comentario</title>
+  </head>
+  <body>
+    <header>
+      <nav></nav>
+    </header>
+    <div class="contenedorlogo">
+      <a href="../Index.html">
+        <img class="logo" src="../Stactic/Assets/logo.png" alt="logo" />
+      </a>
+    </div>
+    <h2 class="Contanos">Modificar Comentario</h2>
+    <div id="modificar-form">
+      <form id="form-modificar" class="formulariocontacto">
+        <input type="hidden" id="modificar-codigo" />
+        <div class="name">
+          <label for="modificar-nombre">Nombre:</label>
+          <input type="text" id="modificar-nombre"  />
+        </div>
+        <div class="apellido">
+          <label for="modificar-apellido">Apellido:</label>
+          <input type="text" id="modificar-apellido" />
+        </div>
+        <div class="telefono">
+          <label for="modificar-mail">Mail:</label>
+          <input type="text" id="modificar-mail"/>
+        </div>
+        <div class="telefono">
+          <label for="modificar-telefono">Teléfono:</label>
+          <input type="text" id="modificar-telefono" />
+        </div>
+        <div class="comentarios">
+          <label for="modificar-comentario">Comentario:</label>
+          <textarea id="modificar-comentario"></textarea>
+        </div>
+        <button type="button" onclick="guardarModificacion()">Guardar</button>
+        <button type="button" onclick="ocultarFormulario()">Cerrar</button>
+      </form>
+    </div>
+    <iframe src="Footer.html" frameborder="0" width="100%" height="100"></iframe>
+    <script src="../Stactic/JS/modificarComentario.js"></script>
+  </body>
+</html>

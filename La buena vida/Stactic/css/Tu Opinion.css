@@ -11,7 +11,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: first baseline;
-    gap: 6em;
+    gap: 5em;
     padding: 3em; /* Elimina la altura fija y deja que el contenido determine la altura */
     background-color: #025959;
   }
@@ -261,3 +261,11 @@
     margin-left: 7em;
   }
   
+.modificartitulo{
+  color: black;
+  font-size: 1.5em;
+  margin-top: -3em;
+  margin-left: 3em;
+  text-align: center;
+}
+

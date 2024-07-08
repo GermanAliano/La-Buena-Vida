@@ -44,7 +44,7 @@ h3{
     display: flex;
     flex-wrap: wrap;
     justify-content: first baseline;
-    gap: 6em;
+    gap: 5em;
     height: 2em;
     padding: 3em;
     margin-top: 0.5em;

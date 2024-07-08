@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../Stactic/css/Tu Opinion.css">
+    <link rel="stylesheet" href="../Stactic/css/Tu Opinion.css" />
     <title>Document</title>
   </head>
   <body>
@@ -15,6 +15,7 @@
         <a class="menu" href="Nosotros.html">Nosotros</a>
         <a class="menu" href="Reseñas.html">Reseñas</a>
         <a class="menu" href="Tu Opinion.html">Deja tu opinión</a>
+        <a class="menu" href="Contacto.html">Contacto</a>
       </nav>
     </header>
     <div class="contenedorlogo">
@@ -25,23 +26,25 @@
 
     <h1 class="Contanos">Contanos tu experiencia</h1>
     <form
-      name="formulario"
+      id="opinion"
+      name="opinion"
       class="formulariocontacto"
-      
+      method="POST"
     >
-      
       <div class="name">
-        <label for="Nombre">Nombre</label>
+        <label for="nombre">Nombre</label>
         <input
+          id="nombre"
           type="text"
           required
           placeholder="Ingrese su nombre"
-          name="name"
+          name="nombre"
         />
       </div>
       <div class="apellido">
         <label for="apellido">Apellido</label>
         <input
+          id="apellido"
           type="text"
           required
           placeholder="Ingrese su apellido"
@@ -49,61 +52,40 @@
         />
       </div>
       <div class="telefono">
-        <label for="Telefono">Telefono</label>
+        <label for="telefono">Telefono</label>
         <input
+          id="telefono"
           type="number"
           required
           placeholder="Ingrese su telefono"
-          value="Telefono"
           name="telefono"
         />
       </div>
-      <label for="E-mail">E-mail</label>
+      <label for="mail">E-mail</label>
       <input
+        id="mail"
         required
         type="text"
         placeholder="Ingrese su correo electronico"
-        name="email"
+        name="mail"
       />
-      <h3>Paquete elegido</h3>
-      <div class="lugar">
-        <label for="">Buenos Aires</label>
-        <input type="checkbox" value="Buenos Aires" />
-        <label for="">Cataratas del Iguazú</label>
-        <input type="checkbox" value="Cataratas del Iguazu" />
-        <label for="">Salta</label>
-        <input type="checkbox" value="Salta" />
-        <label for="">Jujuy</label>
-        <input type="checkbox" value="Jujuy" />
-        <label for="">Mendoza</label>
-        <input type="checkbox" value="Mendoza" />
-        <label for="">El calafate</label>
-        <input type="checkbox" value="El Calafate" />
-        <label for="">Ushuaia</label>
-        <input type="checkbox" value="Ushuaia" />
-      </div>
+      
 
       <div class="comentarios">
-        <label for="">Contanos tu experiencia</label>
+        <label for="comentario">Contanos tu experiencia</label>
         <textarea
           required
           class="experiencia"
-          name="experiencia"
-          id="experiencia"
+          name="comentario"
+          id="comentario"
           rows="15"
           cols="60"
         ></textarea>
       </div>
       <p id="error"></p>
-      <input
-        class="menu botoncito"
-        type="button"
-        id="bl"
-        value="Enviar"
-        onclick="validacion()"
-      />
+      <input class="menu botoncito" type="submit" id="bl" value="Enviar" />
     </form>
-    <script src="../Stactic/JS/validacion.js"></script>
+    <script src="../Stactic/JS/opinion.js"></script>
   </body>
   <iframe src="Footer.html" frameborder="0" width="100%" height="100"></iframe>
 </html>
